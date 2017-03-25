@@ -17,7 +17,7 @@ var firebase_config_service_1 = require('./service/firebase-config.service');
 var CoreModule = (function () {
     function CoreModule(parentModule) {
         if (parentModule) {
-            throw new onerror("CoreModule exists already. Only import in the root/app module");
+            throw new Error("CoreModule exists already. Only import in the root/app module");
         }
     }
     CoreModule.forRoot = function () {

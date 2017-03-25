@@ -11,7 +11,7 @@ import { FirebaseConfigService } from './service/firebase-config.service';
 export class CoreModule {
     constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
         if(parentModule) {
-            throw new onerror("CoreModule exists already. Only import in the root/app module");
+            throw new Error("CoreModule exists already. Only import in the root/app module");
         }
     }
 
